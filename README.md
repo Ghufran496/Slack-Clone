@@ -1,46 +1,110 @@
-# Getting Started with Create React App
+# Slack Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A real-time messaging application inspired by Slack, built with modern web technologies.
 
-## Available Scripts
+![Slack Clone](https://cdn-icons-png.flaticon.com/512/2111/2111615.png)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This Slack Clone is a fully-functional messaging application that mimics the core features of Slack. It allows users to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Sign in with Google Authentication
+- Create and join channels
+- Send and receive real-time messages
+- View message history
+- Toggle sidebar visibility for better mobile experience
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+### Frontend
+- **React 17**: UI library for building the user interface
+- **TypeScript**: For type-safe code
+- **Redux Toolkit**: State management for the application
+- **React Router v6**: For navigation and routing
+- **Styled Components**: For component-scoped CSS styling
+- **Material UI**: For UI components and icons
+- **Luxon**: For date and time formatting
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend & Infrastructure
+- **Firebase**: 
+  - Firestore: Real-time NoSQL database for messages and channels
+  - Authentication: Google sign-in integration
+  - Hosting: For deployment
 
-### `npm run build`
+### Development Tools
+- **Create React App**: Project bootstrapping and configuration
+- **Prettier**: Code formatting
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Authentication
+- Google Sign-In integration
+- Session persistence
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Messaging
+- Real-time message updates
+- Message history with timestamps
+- User avatars and names displayed with messages
+- Auto-scroll to latest messages
 
-### `npm run eject`
+### Channels
+- Create new channels
+- Join existing channels
+- Channel details and information
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Responsive Design
+- Collapsible sidebar for mobile view
+- Responsive layout for all screen sizes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Prerequisites
+- Node.js (v14 or higher recommended)
+- npm or yarn
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Installation
+
+1. Clone the repository
+```
+git clone https://github.com/yourusername/slack-clone.git
+cd slack-clone
+```
+
+2. Install dependencies
+```
+npm install
+```
+
+3. Start the development server
+```
+npm start
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Build for Production
+
+```
+npm run build
+```
+
+This builds the app for production to the `build` folder, optimizing the build for the best performance.
+
+## Project Structure
+
+- `/src`: Source code
+  - `/components`: React components
+  - `/firebase`: Firebase configuration and utilities
+  - `/redux`: Redux store and slices
+  - `/hooks`: Custom React hooks
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To learn more about the technologies used in this project:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React Documentation](https://reactjs.org/)
+- [TypeScript Documentation](https://www.typescriptlang.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [Firebase Documentation](https://firebase.google.com/docs)
+- [Styled Components](https://styled-components.com/)
+- [Material UI](https://mui.com/)
